@@ -1,0 +1,2 @@
+C:\Users\franc\Desktop\Economica\Negocio\obj\Debug\Negocio.csprojAssemblyReference.cache
+C:\Users\franc\Desktop\Economica\Negocio\obj\Debug\Negocio.csproj.CoreCompileInputs.cache

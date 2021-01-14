@@ -1,0 +1,6 @@
+C:\Users\franc\Desktop\Economica\Negocio\bin\Debug\Negocio.dll
+C:\Users\franc\Desktop\Economica\Negocio\bin\Debug\Negocio.pdb
+C:\Users\franc\Desktop\Economica\Negocio\obj\Debug\Negocio.csprojAssemblyReference.cache
+C:\Users\franc\Desktop\Economica\Negocio\obj\Debug\Negocio.csproj.CoreCompileInputs.cache
+C:\Users\franc\Desktop\Economica\Negocio\obj\Debug\Negocio.dll
+C:\Users\franc\Desktop\Economica\Negocio\obj\Debug\Negocio.pdb
