@@ -32,16 +32,41 @@ namespace Economica.Pantallas
 
         private void btnAceptar_Click(object sender, EventArgs e)
         {
-
-            if (usu.Correo1 == txtCorreo.Text.ToString() && usu.Contraseña1 == txtContraseña.Text.ToString()) 
+            if (!ComprobarVacios())
             {
+                usu = nusu.VerificarUsuario(txtCorreo.Text.ToString(), txtContraseña.Text.ToString());
 
+                if (usu.Estado1 == true)
+                {
+                    this.Close();
+                }
+                else
+                {
+                    MessageBox.Show("Usuario Inexistente", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
-            else 
-            {
-                MessageBox.Show("Usuario Inexistente", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-            this.Close();
         }
+
+        #region Validaciones
+
+        public bool ComprobarVacios()
+        {
+            bool Error = false;
+            string DatosError = "";
+            if (txtCorreo.Text.ToString() == "")
+            {
+                Error = true;
+                DatosError += "\n - Correo";
+            }
+            if (txtContraseña.Text.ToString() == "")
+            {
+                Error = true;
+                DatosError += "\n - Contraseña";
+            }
+
+            gen.CrearMensajeVacios(Error, DatosError);
+            return Error;
+        }
+        #endregion
     }
 }

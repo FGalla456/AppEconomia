@@ -51,9 +51,9 @@
     <Service Include="{94E38DFF-614B-4cbd-B67C-F211BB35CE8B}" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\DAO\DAO.csproj">
-      <Project>{09d9e8ea-126d-4920-8cc5-a21d4c51cf0f}</Project>
-      <Name>DAO</Name>
+    <ProjectReference Include="..\DAO1\DAO.csproj">
+      <Project>{b3efe0db-5988-43ce-863b-497cf3a515fe}</Project>
+      <Name>DAO1</Name>
     </ProjectReference>
     <ProjectReference Include="..\Entidades\Entidades.csproj">
       <Project>{a4e3ac8d-945f-4bc0-9a8d-b7b506f6d6cf}</Project>

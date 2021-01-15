@@ -37,7 +37,8 @@ namespace Economica.Pantallas
                     {
                         usu.Contraseña1 = txtContraseña.Text.ToString();
                     }
-                    usu.Nacimiento1 = dtpNacimiento.Text.ToString();
+                    DateTime dt = DateTime.Parse(dtpNacimiento.Text.ToString());
+                    usu.Nacimiento1 = dt.ToString("yyyy-MM-dd");
                     nu.CrearUsuario(usu);
                     this.Close();
                 }
