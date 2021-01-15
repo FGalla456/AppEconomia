@@ -4,3 +4,16 @@ C:\Users\franc\Desktop\Economica\Negocio\obj\Debug\Negocio.csprojAssemblyReferen
 C:\Users\franc\Desktop\Economica\Negocio\obj\Debug\Negocio.csproj.CoreCompileInputs.cache
 C:\Users\franc\Desktop\Economica\Negocio\obj\Debug\Negocio.dll
 C:\Users\franc\Desktop\Economica\Negocio\obj\Debug\Negocio.pdb
+C:\Users\franc\Documents\GitHub\AppEconomia\Negocio\bin\Debug\Negocio.dll
+C:\Users\franc\Documents\GitHub\AppEconomia\Negocio\bin\Debug\Negocio.pdb
+C:\Users\franc\Documents\GitHub\AppEconomia\Negocio\bin\Debug\Entidades.dll
+C:\Users\franc\Documents\GitHub\AppEconomia\Negocio\bin\Debug\Entidades.pdb
+C:\Users\franc\Documents\GitHub\AppEconomia\Negocio\obj\Debug\Negocio.csprojAssemblyReference.cache
+C:\Users\franc\Documents\GitHub\AppEconomia\Negocio\obj\Debug\Negocio.csproj.CoreCompileInputs.cache
+C:\Users\franc\Documents\GitHub\AppEconomia\Negocio\obj\Debug\Negocio.csproj.CopyComplete
+C:\Users\franc\Documents\GitHub\AppEconomia\Negocio\obj\Debug\Negocio.dll
+C:\Users\franc\Documents\GitHub\AppEconomia\Negocio\obj\Debug\Negocio.pdb
+C:\Users\franc\Documents\GitHub\Economia\Negocio\obj\Debug\Negocio.csprojAssemblyReference.cache
+C:\Users\franc\Documents\GitHub\Economia\Negocio\obj\Debug\Negocio.csproj.CoreCompileInputs.cache
+C:\Users\franc\Documents\GitHub\Economia\Negocio\obj\Debug\Negocio.dll
+C:\Users\franc\Documents\GitHub\Economia\Negocio\obj\Debug\Negocio.pdb

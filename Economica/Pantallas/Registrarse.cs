@@ -16,7 +16,7 @@ namespace Economica.Pantallas
     public partial class Registrarse : Form
     {
         Genericas gen = new Genericas();
-        N_Usuario nusu = new N_Usuario();
+        N_Usuario nu = new N_Usuario();
         Usuario usu = new Usuario();
 
         public Registrarse()
@@ -38,6 +38,7 @@ namespace Economica.Pantallas
                         usu.Contraseña1 = txtContraseña.Text.ToString();
                     }
                     usu.Nacimiento1 = dtpNacimiento.Text.ToString();
+                    nu.CrearUsuario(usu);
                     this.Close();
                 }
             }

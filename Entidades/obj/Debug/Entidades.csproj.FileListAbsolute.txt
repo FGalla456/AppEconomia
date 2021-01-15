@@ -4,3 +4,15 @@ C:\Users\franc\Desktop\Economica\Entidades\obj\Debug\Entidades.csproj.CoreCompil
 C:\Users\franc\Desktop\Economica\Entidades\obj\Debug\Entidades.dll
 C:\Users\franc\Desktop\Economica\Entidades\obj\Debug\Entidades.pdb
 C:\Users\franc\Desktop\Economica\Entidades\obj\Debug\Entidades.csprojAssemblyReference.cache
+C:\Users\franc\Documents\GitHub\AppEconomia\Entidades\bin\Debug\Entidades.dll
+C:\Users\franc\Documents\GitHub\AppEconomia\Entidades\bin\Debug\Entidades.pdb
+C:\Users\franc\Documents\GitHub\AppEconomia\Entidades\obj\Debug\Entidades.csprojAssemblyReference.cache
+C:\Users\franc\Documents\GitHub\AppEconomia\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
+C:\Users\franc\Documents\GitHub\AppEconomia\Entidades\obj\Debug\Entidades.dll
+C:\Users\franc\Documents\GitHub\AppEconomia\Entidades\obj\Debug\Entidades.pdb
+C:\Users\franc\Documents\GitHub\Economia\Entidades\bin\Debug\Entidades.dll
+C:\Users\franc\Documents\GitHub\Economia\Entidades\bin\Debug\Entidades.pdb
+C:\Users\franc\Documents\GitHub\Economia\Entidades\obj\Debug\Entidades.csprojAssemblyReference.cache
+C:\Users\franc\Documents\GitHub\Economia\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
+C:\Users\franc\Documents\GitHub\Economia\Entidades\obj\Debug\Entidades.dll
+C:\Users\franc\Documents\GitHub\Economia\Entidades\obj\Debug\Entidades.pdb
