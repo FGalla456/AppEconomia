@@ -32,7 +32,7 @@
             this.txtDescripcion = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cbCategorias = new System.Windows.Forms.ComboBox();
             this.txtMonto = new System.Windows.Forms.TextBox();
             this.btnAceptar = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -72,13 +72,13 @@
             this.label1.TabIndex = 8;
             this.label1.Text = "Categoria:";
             // 
-            // comboBox1
+            // cbCategorias
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(206, 68);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 21);
-            this.comboBox1.TabIndex = 7;
+            this.cbCategorias.FormattingEnabled = true;
+            this.cbCategorias.Location = new System.Drawing.Point(206, 68);
+            this.cbCategorias.Name = "cbCategorias";
+            this.cbCategorias.Size = new System.Drawing.Size(121, 21);
+            this.cbCategorias.TabIndex = 7;
             // 
             // txtMonto
             // 
@@ -108,10 +108,11 @@
             this.Controls.Add(this.txtDescripcion);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.cbCategorias);
             this.Controls.Add(this.txtMonto);
             this.Name = "Ingresos";
             this.Text = "Ingresos";
+            this.Load += new System.EventHandler(this.Ingresos_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -123,7 +124,7 @@
         private System.Windows.Forms.TextBox txtDescripcion;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cbCategorias;
         private System.Windows.Forms.TextBox txtMonto;
         private System.Windows.Forms.Button btnAceptar;
     }

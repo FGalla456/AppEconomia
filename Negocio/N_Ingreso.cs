@@ -4,14 +4,24 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Entidades;
+using DAO;
+using System.Data;
 
 namespace Negocio
 {
     public class N_Ingreso
     {
+
+        DAOIngreso di = new DAOIngreso();
+
+        public DataTable getTabla() 
+        {
+            return di.getTablaIngreso();
+        }
+
         public void CargarIngreso(Ingresos ing) 
         {
-        
+            di.InsertarIngreso(ing);
         }
 
     }

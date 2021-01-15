@@ -17,6 +17,7 @@ namespace Economica.Pantallas
     {
         Genericas Gen = new Genericas();
         N_Ingreso ni = new N_Ingreso();
+        N_Categoria nc = new N_Categoria();
         Entidades.Ingresos ing = new Entidades.Ingresos(); 
 
         public Ingresos()
@@ -47,9 +48,17 @@ namespace Economica.Pantallas
 
         private void btnAceptar_Click(object sender, EventArgs e)
         {
+            ing.IdCategoria = Int32.Parse(cbCategorias.SelectedValue.ToString());
             ing.Descripcion1 = txtDescripcion.Text.ToString();
             ing.Monto1 = Int32.Parse(txtMonto.Text.ToString());
             ni.CargarIngreso(ing);
+        }
+
+        private void Ingresos_Load(object sender, EventArgs e)
+        {
+            cbCategorias.ValueMember = "idCategoria";
+            cbCategorias.DisplayMember = "Nombre";
+            cbCategorias.DataSource = nc.getTablaCatFiltrada(1);
         }
     }
 }

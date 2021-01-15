@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.txtMonto = new System.Windows.Forms.TextBox();
-            this.cbCategoria = new System.Windows.Forms.ComboBox();
+            this.cbCategorias = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.txtDescripcion = new System.Windows.Forms.TextBox();
@@ -45,13 +45,13 @@
             this.txtMonto.TabIndex = 0;
             this.txtMonto.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.PermitirSoloNumeros);
             // 
-            // cbCategoria
+            // cbCategorias
             // 
-            this.cbCategoria.FormattingEnabled = true;
-            this.cbCategoria.Location = new System.Drawing.Point(200, 79);
-            this.cbCategoria.Name = "cbCategoria";
-            this.cbCategoria.Size = new System.Drawing.Size(121, 21);
-            this.cbCategoria.TabIndex = 1;
+            this.cbCategorias.FormattingEnabled = true;
+            this.cbCategorias.Location = new System.Drawing.Point(200, 79);
+            this.cbCategorias.Name = "cbCategorias";
+            this.cbCategorias.Size = new System.Drawing.Size(121, 21);
+            this.cbCategorias.TabIndex = 1;
             // 
             // label1
             // 
@@ -108,10 +108,11 @@
             this.Controls.Add(this.txtDescripcion);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.cbCategoria);
+            this.Controls.Add(this.cbCategorias);
             this.Controls.Add(this.txtMonto);
             this.Name = "Gastos";
             this.Text = "Gastos";
+            this.Load += new System.EventHandler(this.Gastos_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -120,7 +121,7 @@
         #endregion
 
         private System.Windows.Forms.TextBox txtMonto;
-        private System.Windows.Forms.ComboBox cbCategoria;
+        private System.Windows.Forms.ComboBox cbCategorias;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtDescripcion;

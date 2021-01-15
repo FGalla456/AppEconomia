@@ -12,7 +12,6 @@ namespace DAO
     {
         AccesoDatos ds = new AccesoDatos();
 
-
         public DataTable getTablaUsuario()
         {
             List<Usuario> lista = new List<Usuario>();

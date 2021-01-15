@@ -48,9 +48,20 @@ namespace Economica.Pantallas
         {
             if (!ComprobarVacios()) 
             {
+                if(rbGasto.Checked)
+                cat.Tipo1 = 0;
+                else
+                {
+                    cat.Tipo1 = 1;
+                }
+                cat.Nombre1 = txtNombre.Text.ToString();
+                cat.Descripcion1 = txtDescripcion.Text.ToString();
+                nc.CargarCategoria(cat);
+                MessageBox.Show("Cargado Correctamente");
             }
         }
 
+        #region Validaciones
         private bool ComprobarVacios() 
         {
             bool Error = false;
@@ -69,6 +80,8 @@ namespace Economica.Pantallas
             Gen.CrearMensajeVacios(Error,DatosError);
             return Error;
         }
+
+        #endregion
 
     }
 }
