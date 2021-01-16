@@ -34,6 +34,7 @@
             this.btnCategoria = new System.Windows.Forms.Button();
             this.btnDolar = new System.Windows.Forms.Button();
             this.btnConfiguracion = new System.Windows.Forms.Button();
+            this.btnPais = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnGastos
@@ -96,11 +97,22 @@
             this.btnConfiguracion.UseVisualStyleBackColor = true;
             this.btnConfiguracion.Click += new System.EventHandler(this.btnConfiguracion_Click);
             // 
+            // btnPais
+            // 
+            this.btnPais.Location = new System.Drawing.Point(468, 409);
+            this.btnPais.Name = "btnPais";
+            this.btnPais.Size = new System.Drawing.Size(75, 23);
+            this.btnPais.TabIndex = 6;
+            this.btnPais.Text = "Pais";
+            this.btnPais.UseVisualStyleBackColor = true;
+            this.btnPais.Click += new System.EventHandler(this.btnPais_Click);
+            // 
             // Inicio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(988, 509);
+            this.Controls.Add(this.btnPais);
             this.Controls.Add(this.btnConfiguracion);
             this.Controls.Add(this.btnDolar);
             this.Controls.Add(this.btnCategoria);
@@ -122,6 +134,7 @@
         private System.Windows.Forms.Button btnCategoria;
         private System.Windows.Forms.Button btnDolar;
         private System.Windows.Forms.Button btnConfiguracion;
+        private System.Windows.Forms.Button btnPais;
     }
 }
 

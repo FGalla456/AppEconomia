@@ -38,12 +38,6 @@ namespace Economica.Pantallas
             mcNuevo.SetDate(DateTime.Today);
             txtVCO2.Focus();
             //mcNuevo.MaxDate = DateTime.Today;
-            txtVCO2.Text = "71.25";  //Valor Compra Oficial
-            txtVCB2.Text = "131";  //Valor Compra Blue
-            txtVCOI2.Text = "99.13"; //Valor Compra con Impuesto
-            txtVVO2.Text = "76.25";  //Valor Venta Oficial
-            txtVVB2.Text = "136";  //Valor Venta Blue
-
         }
 
         #region KeyPress

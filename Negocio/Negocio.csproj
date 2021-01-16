@@ -46,14 +46,15 @@
     <Compile Include="N_Gasto.cs" />
     <Compile Include="N_Ingreso.cs" />
     <Compile Include="N_MonedaExtranjera.cs" />
+    <Compile Include="N_Pais.cs" />
     <Compile Include="N_Usuario.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Service Include="{94E38DFF-614B-4cbd-B67C-F211BB35CE8B}" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\DAO1\DAO.csproj">
-      <Project>{b3efe0db-5988-43ce-863b-497cf3a515fe}</Project>
-      <Name>DAO1</Name>
+    <ProjectReference Include="..\DAO\DAO.csproj">
+      <Project>{08f98874-9d09-49a8-a6b1-59d9ff00cd5e}</Project>
+      <Name>DAO</Name>
     </ProjectReference>
     <ProjectReference Include="..\Entidades\Entidades.csproj">
       <Project>{a4e3ac8d-945f-4bc0-9a8d-b7b506f6d6cf}</Project>

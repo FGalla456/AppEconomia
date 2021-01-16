@@ -4,7 +4,7 @@ using System.Runtime.InteropServices;
 
 // La información general de un ensamblado se controla mediante el siguiente 
 // conjunto de atributos. Cambie estos valores de atributo para modificar la información
-// asociada con un ensamblado.
+// asociada a un ensamblado.
 [assembly: AssemblyTitle("DAO")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // El siguiente GUID sirve como id. de typelib si este proyecto se expone a COM.
-[assembly: Guid("09d9e8ea-126d-4920-8cc5-a21d4c51cf0f")]
+[assembly: Guid("08f98874-9d09-49a8-a6b1-59d9ff00cd5e")]
 
 // La información de versión de un ensamblado consta de los cuatro valores siguientes:
 //

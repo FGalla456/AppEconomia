@@ -53,6 +53,11 @@ namespace Economica
             Con.Show();
         }
 
+        private void btnPais_Click(object sender, EventArgs e)
+        {
+            Pais pais = new Pais();
+            pais.Show();
+        }
 
         #endregion
 
@@ -61,5 +66,7 @@ namespace Economica
             Iniciar_Sesion In = new Iniciar_Sesion();
             In.ShowDialog();
         }
+
+
     }
 }

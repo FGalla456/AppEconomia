@@ -42,7 +42,7 @@
             this.txtMonto.Location = new System.Drawing.Point(200, 152);
             this.txtMonto.Name = "txtMonto";
             this.txtMonto.Size = new System.Drawing.Size(121, 20);
-            this.txtMonto.TabIndex = 0;
+            this.txtMonto.TabIndex = 2;
             this.txtMonto.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.PermitirSoloNumeros);
             // 
             // cbCategorias
@@ -77,7 +77,7 @@
             this.txtDescripcion.Multiline = true;
             this.txtDescripcion.Name = "txtDescripcion";
             this.txtDescripcion.Size = new System.Drawing.Size(286, 95);
-            this.txtDescripcion.TabIndex = 4;
+            this.txtDescripcion.TabIndex = 3;
             // 
             // label3
             // 
@@ -93,7 +93,7 @@
             this.btnAceptar.Location = new System.Drawing.Point(341, 383);
             this.btnAceptar.Name = "btnAceptar";
             this.btnAceptar.Size = new System.Drawing.Size(97, 36);
-            this.btnAceptar.TabIndex = 7;
+            this.btnAceptar.TabIndex = 4;
             this.btnAceptar.Text = "Aceptar";
             this.btnAceptar.UseVisualStyleBackColor = true;
             this.btnAceptar.Click += new System.EventHandler(this.btnAceptar_Click);

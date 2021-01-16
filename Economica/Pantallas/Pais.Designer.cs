@@ -60,6 +60,7 @@ namespace Economica.Pantallas
             this.txtNombrePais.Name = "txtNombrePais";
             this.txtNombrePais.Size = new System.Drawing.Size(256, 20);
             this.txtNombrePais.TabIndex = 2;
+            this.txtNombrePais.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.PermitirSoloLetras);
             // 
             // txtNombreMoneda
             // 
@@ -76,6 +77,7 @@ namespace Economica.Pantallas
             this.btnAceptar.TabIndex = 4;
             this.btnAceptar.Text = "Aceptar";
             this.btnAceptar.UseVisualStyleBackColor = true;
+            this.btnAceptar.Click += new System.EventHandler(this.btnAceptar_Click);
             // 
             // Pais
             // 
