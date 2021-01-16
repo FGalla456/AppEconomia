@@ -101,6 +101,12 @@
     <Compile Include="Pantallas\Inicio.Designer.cs">
       <DependentUpon>Inicio.cs</DependentUpon>
     </Compile>
+    <Compile Include="Pantallas\Pais.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantallas\Pais.Designer.cs">
+      <DependentUpon>Pais.cs</DependentUpon>
+    </Compile>
     <Compile Include="Pantallas\Precio Moneda Extranjera.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -135,6 +141,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Pantallas\Inicio.resx">
       <DependentUpon>Inicio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pantallas\Pais.resx">
+      <DependentUpon>Pais.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Pantallas\Precio Moneda Extranjera.resx">
       <DependentUpon>Precio Moneda Extranjera.cs</DependentUpon>

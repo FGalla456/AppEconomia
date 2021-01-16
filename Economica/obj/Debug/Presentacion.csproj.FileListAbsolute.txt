@@ -107,3 +107,4 @@ C:\Users\franc\Documents\GitHub\Economia\Economica\bin\Debug\MySql.Data.xml
 C:\Users\franc\Documents\GitHub\Economia\Economica\obj\Debug\Presentacion.csproj.CopyComplete
 C:\Users\franc\Documents\GitHub\Economia\Economica\obj\Debug\Economica.exe
 C:\Users\franc\Documents\GitHub\Economia\Economica\obj\Debug\Economica.pdb
+C:\Users\franc\Documents\GitHub\Economia\Economica\obj\Debug\Economica.Pantallas.Pais.resources

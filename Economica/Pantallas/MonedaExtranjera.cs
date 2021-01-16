@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Globalization;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -17,7 +18,8 @@ namespace Economica.Pantallas
     {
         Genericas Gen = new Genericas();
         Entidades.MonedaExtranjera me = new Entidades.MonedaExtranjera();
-        //N_MonedaExtranjera nme = new Negocio.N_MonedaExtranjera;
+        N_MonedaExtranjera nme = new N_MonedaExtranjera();
+        CultureInfo Cul = new CultureInfo("en-US");
 
         public MonedaExtranjera()
         {
@@ -28,14 +30,20 @@ namespace Economica.Pantallas
         {
             
             mcViejo.SetDate(DateTime.Parse("01/08/2020"));
-            txtVCO1.Text = "76.25";  //Valor Compra Oficial
-            txtVCB1.Text = "136";  //Valor Compra Blue
+            txtVCO1.Text = "71.25";  //Valor Compra Oficial
+            txtVCB1.Text = "131";  //Valor Compra Blue
             txtVCOI1.Text = "99.13"; //Valor Compra con Impuesto
-            txtVVO1.Text = "71.25";  //Valor Venta Oficial
-            txtVVB1.Text = "131";  //Valor Venta Blue
+            txtVVO1.Text = "76.25";  //Valor Venta Oficial
+            txtVVB1.Text = "136";  //Valor Venta Blue
             mcNuevo.SetDate(DateTime.Today);
             txtVCO2.Focus();
             //mcNuevo.MaxDate = DateTime.Today;
+            txtVCO2.Text = "71.25";  //Valor Compra Oficial
+            txtVCB2.Text = "131";  //Valor Compra Blue
+            txtVCOI2.Text = "99.13"; //Valor Compra con Impuesto
+            txtVVO2.Text = "76.25";  //Valor Venta Oficial
+            txtVVB2.Text = "136";  //Valor Venta Blue
+
         }
 
         #region KeyPress
@@ -55,6 +63,10 @@ namespace Economica.Pantallas
             Gen.NoPermitirEscribir(sender, e);
         }
 
+        public void PermitirDecimales(object sender, KeyPressEventArgs e) 
+        {
+            Gen.PermitirDecimales(sender, e);
+        }
 
         #endregion
 
@@ -69,12 +81,15 @@ namespace Economica.Pantallas
         {
             if (!ComprobarVacios())
             {
-                me.VCompraBlue1 = float.Parse(txtVCB2.Text);
-                me.VCompraOficial1 = float.Parse(txtVCO2.Text);
-                me.VCompraOficialImpuesto1 = float.Parse(txtVCOI2.Text);
-                me.VVentaBlue1 = float.Parse(txtVVB2.Text);
-                me.VVentaOficial1 = float.Parse(txtVVO2.Text);
-                me.Fecha1 = mcNuevo.ToString();
+
+                me.VCompraBlue1 = txtVCB2.Text.ToString();
+                me.VCompraOficial1 = txtVCO2.Text.ToString();
+                me.VCompraOficialImpuesto1 = txtVCOI2.Text.ToString();
+                me.VVentaBlue1 = txtVVB2.Text.ToString();
+                me.VVentaOficial1 = txtVVO2.Text.ToString();
+                me.Fecha1 = mcNuevo.SelectionStart.Date.ToString("yyyy-MM-dd");
+                me.IdPais = 2;
+                nme.CargarValorMonExt(me);
                 this.Close();
             }
         }

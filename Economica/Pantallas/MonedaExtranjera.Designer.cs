@@ -255,7 +255,7 @@
             this.txtVCOI2.Name = "txtVCOI2";
             this.txtVCOI2.Size = new System.Drawing.Size(115, 20);
             this.txtVCOI2.TabIndex = 3;
-            this.txtVCOI2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.PermitirSoloNumeros);
+            this.txtVCOI2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.PermitirDecimales);
             // 
             // label9
             // 
@@ -272,7 +272,7 @@
             this.txtVVB2.Name = "txtVVB2";
             this.txtVVB2.Size = new System.Drawing.Size(115, 20);
             this.txtVVB2.TabIndex = 5;
-            this.txtVVB2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.PermitirSoloNumeros);
+            this.txtVVB2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.PermitirDecimales);
             // 
             // label10
             // 
@@ -289,7 +289,7 @@
             this.txtVCB2.Name = "txtVCB2";
             this.txtVCB2.Size = new System.Drawing.Size(115, 20);
             this.txtVCB2.TabIndex = 4;
-            this.txtVCB2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.PermitirSoloNumeros);
+            this.txtVCB2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.PermitirDecimales);
             // 
             // label11
             // 
@@ -306,7 +306,7 @@
             this.txtVVO2.Name = "txtVVO2";
             this.txtVVO2.Size = new System.Drawing.Size(115, 20);
             this.txtVVO2.TabIndex = 2;
-            this.txtVVO2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.PermitirSoloNumeros);
+            this.txtVVO2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.PermitirDecimales);
             // 
             // label12
             // 
@@ -332,7 +332,7 @@
             this.txtVCO2.Name = "txtVCO2";
             this.txtVCO2.Size = new System.Drawing.Size(115, 20);
             this.txtVCO2.TabIndex = 1;
-            this.txtVCO2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.PermitirSoloNumeros);
+            this.txtVCO2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.PermitirDecimales);
             // 
             // label14
             // 
@@ -353,7 +353,7 @@
             this.btnAceptar.UseVisualStyleBackColor = true;
             this.btnAceptar.Click += new System.EventHandler(this.btnAceptar_Click);
             // 
-            // Dolar
+            // MonedaExtranjera
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -361,7 +361,7 @@
             this.Controls.Add(this.btnAceptar);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
-            this.Name = "Dolar";
+            this.Name = "MonedaExtranjera";
             this.Text = "Dolar";
             this.Load += new System.EventHandler(this.Dolar_Load);
             this.groupBox1.ResumeLayout(false);
