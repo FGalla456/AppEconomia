@@ -19,6 +19,11 @@ namespace Negocio
             return di.getTablaIngreso();
         }
 
+        public DataTable getTablaResumen()
+        {
+            return di.getTablaIngresoResumen();
+        }
+
         public void CargarIngreso(Ingresos ing) 
         {
             di.InsertarIngreso(ing);

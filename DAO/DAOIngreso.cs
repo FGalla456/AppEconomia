@@ -26,5 +26,13 @@ namespace DAO
 
             ds.RealizarConsulta(consulta);
         }
+
+        public DataTable getTablaIngresoResumen()
+        {
+            List<Ingresos> lista = new List<Ingresos>();
+            DataTable tabla = ds.ObtenerTabla("Ingreso", "select Categoria.idCategoria as 'Categoria'," +
+                "Categoria.Nombre,Monto from Ingreso inner join Categoria on Categoria.idCategoria = Ingreso.idCategoria where Ingreso.Estado = 1");
+            return tabla;
+        }
     }
 }

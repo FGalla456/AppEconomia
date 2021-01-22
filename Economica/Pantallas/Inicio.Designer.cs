@@ -28,100 +28,123 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.Button btnCerrar;
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Inicio));
             this.btnGastos = new System.Windows.Forms.Button();
             this.btnIngresos = new System.Windows.Forms.Button();
             this.btnResumen = new System.Windows.Forms.Button();
             this.btnCategoria = new System.Windows.Forms.Button();
             this.btnDolar = new System.Windows.Forms.Button();
-            this.btnConfiguracion = new System.Windows.Forms.Button();
             this.btnPais = new System.Windows.Forms.Button();
+            this.PanelSuperior = new System.Windows.Forms.Panel();
+            this.btnMinimizar = new System.Windows.Forms.Button();
+            this.btnConfiguracion = new System.Windows.Forms.Button();
+            this.PanelMenu = new System.Windows.Forms.Panel();
+            this.PanelContenedor = new System.Windows.Forms.Panel();
+            btnCerrar = new System.Windows.Forms.Button();
+            this.PanelSuperior.SuspendLayout();
+            this.PanelMenu.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // btnCerrar
+            // 
+            resources.ApplyResources(btnCerrar, "btnCerrar");
+            btnCerrar.Name = "btnCerrar";
+            btnCerrar.UseVisualStyleBackColor = true;
+            btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
             // 
             // btnGastos
             // 
-            this.btnGastos.Location = new System.Drawing.Point(214, 93);
+            resources.ApplyResources(this.btnGastos, "btnGastos");
             this.btnGastos.Name = "btnGastos";
-            this.btnGastos.Size = new System.Drawing.Size(75, 23);
-            this.btnGastos.TabIndex = 0;
-            this.btnGastos.Text = "Gastos";
             this.btnGastos.UseVisualStyleBackColor = true;
             this.btnGastos.Click += new System.EventHandler(this.btnGastos_Click);
             // 
             // btnIngresos
             // 
-            this.btnIngresos.Location = new System.Drawing.Point(468, 93);
+            resources.ApplyResources(this.btnIngresos, "btnIngresos");
             this.btnIngresos.Name = "btnIngresos";
-            this.btnIngresos.Size = new System.Drawing.Size(75, 23);
-            this.btnIngresos.TabIndex = 1;
-            this.btnIngresos.Text = "Ingresos";
             this.btnIngresos.UseVisualStyleBackColor = true;
             this.btnIngresos.Click += new System.EventHandler(this.btnIngresos_Click);
             // 
             // btnResumen
             // 
-            this.btnResumen.Location = new System.Drawing.Point(705, 93);
+            resources.ApplyResources(this.btnResumen, "btnResumen");
             this.btnResumen.Name = "btnResumen";
-            this.btnResumen.Size = new System.Drawing.Size(84, 23);
-            this.btnResumen.TabIndex = 2;
-            this.btnResumen.Text = "Resumen";
             this.btnResumen.UseVisualStyleBackColor = true;
             this.btnResumen.Click += new System.EventHandler(this.btnResumen_Click);
             // 
             // btnCategoria
             // 
-            this.btnCategoria.Location = new System.Drawing.Point(214, 276);
+            resources.ApplyResources(this.btnCategoria, "btnCategoria");
             this.btnCategoria.Name = "btnCategoria";
-            this.btnCategoria.Size = new System.Drawing.Size(75, 23);
-            this.btnCategoria.TabIndex = 3;
-            this.btnCategoria.Text = "Categoria";
             this.btnCategoria.UseVisualStyleBackColor = true;
             this.btnCategoria.Click += new System.EventHandler(this.btnCategoria_Click);
             // 
             // btnDolar
             // 
-            this.btnDolar.Location = new System.Drawing.Point(468, 276);
+            resources.ApplyResources(this.btnDolar, "btnDolar");
             this.btnDolar.Name = "btnDolar";
-            this.btnDolar.Size = new System.Drawing.Size(75, 23);
-            this.btnDolar.TabIndex = 4;
-            this.btnDolar.Text = "Dolar";
             this.btnDolar.UseVisualStyleBackColor = true;
             this.btnDolar.Click += new System.EventHandler(this.btnDolar_Click);
             // 
-            // btnConfiguracion
-            // 
-            this.btnConfiguracion.Location = new System.Drawing.Point(705, 276);
-            this.btnConfiguracion.Name = "btnConfiguracion";
-            this.btnConfiguracion.Size = new System.Drawing.Size(84, 23);
-            this.btnConfiguracion.TabIndex = 5;
-            this.btnConfiguracion.Text = "Configuracion";
-            this.btnConfiguracion.UseVisualStyleBackColor = true;
-            this.btnConfiguracion.Click += new System.EventHandler(this.btnConfiguracion_Click);
-            // 
             // btnPais
             // 
-            this.btnPais.Location = new System.Drawing.Point(468, 409);
+            resources.ApplyResources(this.btnPais, "btnPais");
             this.btnPais.Name = "btnPais";
-            this.btnPais.Size = new System.Drawing.Size(75, 23);
-            this.btnPais.TabIndex = 6;
-            this.btnPais.Text = "Pais";
             this.btnPais.UseVisualStyleBackColor = true;
             this.btnPais.Click += new System.EventHandler(this.btnPais_Click);
             // 
+            // PanelSuperior
+            // 
+            this.PanelSuperior.Controls.Add(btnCerrar);
+            this.PanelSuperior.Controls.Add(this.btnMinimizar);
+            this.PanelSuperior.Controls.Add(this.btnConfiguracion);
+            resources.ApplyResources(this.PanelSuperior, "PanelSuperior");
+            this.PanelSuperior.Name = "PanelSuperior";
+            // 
+            // btnMinimizar
+            // 
+            resources.ApplyResources(this.btnMinimizar, "btnMinimizar");
+            this.btnMinimizar.Name = "btnMinimizar";
+            this.btnMinimizar.UseVisualStyleBackColor = true;
+            this.btnMinimizar.Click += new System.EventHandler(this.btnMinimizar_Click);
+            // 
+            // btnConfiguracion
+            // 
+            resources.ApplyResources(this.btnConfiguracion, "btnConfiguracion");
+            this.btnConfiguracion.Name = "btnConfiguracion";
+            this.btnConfiguracion.UseVisualStyleBackColor = true;
+            this.btnConfiguracion.Click += new System.EventHandler(this.btnConfiguracion_Click);
+            // 
+            // PanelMenu
+            // 
+            this.PanelMenu.Controls.Add(this.btnGastos);
+            this.PanelMenu.Controls.Add(this.btnResumen);
+            this.PanelMenu.Controls.Add(this.btnPais);
+            this.PanelMenu.Controls.Add(this.btnIngresos);
+            this.PanelMenu.Controls.Add(this.btnDolar);
+            this.PanelMenu.Controls.Add(this.btnCategoria);
+            resources.ApplyResources(this.PanelMenu, "PanelMenu");
+            this.PanelMenu.Name = "PanelMenu";
+            // 
+            // PanelContenedor
+            // 
+            resources.ApplyResources(this.PanelContenedor, "PanelContenedor");
+            this.PanelContenedor.Name = "PanelContenedor";
+            // 
             // Inicio
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(988, 509);
-            this.Controls.Add(this.btnPais);
-            this.Controls.Add(this.btnConfiguracion);
-            this.Controls.Add(this.btnDolar);
-            this.Controls.Add(this.btnCategoria);
-            this.Controls.Add(this.btnResumen);
-            this.Controls.Add(this.btnIngresos);
-            this.Controls.Add(this.btnGastos);
+            this.Controls.Add(this.PanelContenedor);
+            this.Controls.Add(this.PanelMenu);
+            this.Controls.Add(this.PanelSuperior);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Inicio";
-            this.Text = "Inicio";
             this.Load += new System.EventHandler(this.Inicio_Load);
+            this.PanelSuperior.ResumeLayout(false);
+            this.PanelMenu.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -133,8 +156,12 @@
         private System.Windows.Forms.Button btnResumen;
         private System.Windows.Forms.Button btnCategoria;
         private System.Windows.Forms.Button btnDolar;
-        private System.Windows.Forms.Button btnConfiguracion;
         private System.Windows.Forms.Button btnPais;
+        private System.Windows.Forms.Panel PanelSuperior;
+        private System.Windows.Forms.Panel PanelMenu;
+        private System.Windows.Forms.Panel PanelContenedor;
+        private System.Windows.Forms.Button btnMinimizar;
+        private System.Windows.Forms.Button btnConfiguracion;
     }
 }
 

@@ -108,3 +108,13 @@ C:\Users\franc\Documents\GitHub\Economia\Economica\obj\Debug\Economica.pdb
 C:\Users\franc\Documents\GitHub\Economia\Economica\obj\Debug\Economica.Pantallas.Pais.resources
 C:\Users\franc\Documents\GitHub\Economia\Economica\bin\Debug\DAO.dll
 C:\Users\franc\Documents\GitHub\Economia\Economica\bin\Debug\DAO.pdb
+C:\Users\franc\Documents\GitHub\Economia\Economica\bin\Debug\LiveCharts.dll
+C:\Users\franc\Documents\GitHub\Economia\Economica\bin\Debug\LiveCharts.WinForms.dll
+C:\Users\franc\Documents\GitHub\Economia\Economica\bin\Debug\LiveCharts.Wpf.dll
+C:\Users\franc\Documents\GitHub\Economia\Economica\bin\Debug\LiveCharts.pdb
+C:\Users\franc\Documents\GitHub\Economia\Economica\bin\Debug\LiveCharts.xml
+C:\Users\franc\Documents\GitHub\Economia\Economica\bin\Debug\LiveCharts.WinForms.pdb
+C:\Users\franc\Documents\GitHub\Economia\Economica\bin\Debug\LiveCharts.WinForms.xml
+C:\Users\franc\Documents\GitHub\Economia\Economica\bin\Debug\LiveCharts.Wpf.pdb
+C:\Users\franc\Documents\GitHub\Economia\Economica\bin\Debug\LiveCharts.Wpf.xml
+C:\Users\franc\Documents\GitHub\Economia\Economica\obj\Debug\Economica.Pantallas.Resumen.resources

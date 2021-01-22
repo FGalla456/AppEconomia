@@ -17,7 +17,14 @@ namespace Economica
         {
             InitializeComponent();
         }
-        #region ClicksFormularios
+
+        private void Inicio_Load(object sender, EventArgs e)
+        {
+            Iniciar_Sesion In = new Iniciar_Sesion();
+            In.ShowDialog();
+        }
+
+        #region ClicksPanelMenu
         private void btnGastos_Click(object sender, EventArgs e)
         {
             Gastos Gas = new Gastos();
@@ -32,7 +39,8 @@ namespace Economica
 
         private void btnResumen_Click(object sender, EventArgs e)
         {
-            ///Crear Pantalla Despues
+            Resumen res = new Resumen();
+            res.Show();
         }
 
         private void btnCategoria_Click(object sender, EventArgs e)
@@ -47,12 +55,6 @@ namespace Economica
             Me.Show();
         }
 
-        private void btnConfiguracion_Click(object sender, EventArgs e)
-        {
-            Configuracion Con = new Configuracion();
-            Con.Show();
-        }
-
         private void btnPais_Click(object sender, EventArgs e)
         {
             Pais pais = new Pais();
@@ -61,12 +63,24 @@ namespace Economica
 
         #endregion
 
-        private void Inicio_Load(object sender, EventArgs e)
+        #region ClicksPanelSuperior
+
+        private void btnCerrar_Click(object sender, EventArgs e)
         {
-            Iniciar_Sesion In = new Iniciar_Sesion();
-            In.ShowDialog();
+            this.Close();
         }
 
+        private void btnMinimizar_Click(object sender, EventArgs e)
+        {
+            WindowState = FormWindowState.Minimized;
+        }
 
+        private void btnConfiguracion_Click(object sender, EventArgs e)
+        {
+            Configuracion Con = new Configuracion();
+            Con.Show();
+        }
+
+        #endregion
     }
 }
