@@ -24,41 +24,71 @@ namespace Economica
             In.ShowDialog();
         }
 
+        private void AbrirHijo<Forms>() where Forms : Form, new()
+        {
+            Form formulario;
+            formulario = PanelContenedor.Controls.OfType<Forms>().FirstOrDefault();
+
+            //si el formulario/instancia no existe, creamos nueva instancia y mostramos
+            if (formulario == null)
+            {
+                formulario = new Forms();
+                formulario.TopLevel = false;
+                //   formulario.Dock = DockStyle.Fill;
+                formulario.Anchor = AnchorStyles.Bottom;
+                formulario.Anchor = AnchorStyles.Left;
+                formulario.Anchor = AnchorStyles.Right;
+                formulario.Anchor = AnchorStyles.Top;
+                PanelContenedor.Controls.Add(formulario);
+                PanelContenedor.Tag = formulario;
+                formulario.Show();
+                formulario.BringToFront();
+                // formulario.FormClosed += new FormClosedEventHandler(CloseForms);               
+            }
+            else
+            {
+
+                //Si el Formulario/instancia existe, lo traemos a frente
+                formulario.BringToFront();
+
+                //Si la instancia esta minimizada mostramos
+                if (formulario.WindowState == FormWindowState.Minimized)
+                {
+                    formulario.WindowState = FormWindowState.Normal;
+                }
+
+            }
+        }
+
         #region ClicksPanelMenu
         private void btnGastos_Click(object sender, EventArgs e)
         {
-            Gastos Gas = new Gastos();
-            Gas.Show();
+            AbrirHijo<Gastos>();
         }
 
         private void btnIngresos_Click(object sender, EventArgs e)
         {
-            Ingresos Ing = new Ingresos();
-            Ing.Show();
+            AbrirHijo<Ingresos>();
         }
 
         private void btnResumen_Click(object sender, EventArgs e)
         {
-            Resumen res = new Resumen();
-            res.Show();
+            AbrirHijo<Resumen>();
         }
 
         private void btnCategoria_Click(object sender, EventArgs e)
         {
-            Categorias Cat = new Categorias();
-            Cat.Show();
+            AbrirHijo<Categorias>();
         }
 
         private void btnDolar_Click(object sender, EventArgs e)
         {
-            MonedaExtranjera Me = new MonedaExtranjera();
-            Me.Show();
+            AbrirHijo <MonedaExtranjera>();
         }
 
         private void btnPais_Click(object sender, EventArgs e)
         {
-            Pais pais = new Pais();
-            pais.Show();
+            AbrirHijo<Pais>();
         }
 
         #endregion

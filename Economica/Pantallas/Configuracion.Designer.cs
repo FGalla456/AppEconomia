@@ -103,7 +103,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1091, 761);
             this.Controls.Add(this.btnAceptar);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -111,6 +111,7 @@
             this.Controls.Add(this.cbPais);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtContraseña);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Configuracion";
             this.Text = "Configuracion";
             this.ResumeLayout(false);

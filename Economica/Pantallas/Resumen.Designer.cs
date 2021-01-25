@@ -30,38 +30,27 @@ namespace Economica.Pantallas
         private void InitializeComponent()
         {
             this.GraficoIngresos = new LiveCharts.WinForms.PieChart();
-            this.Grilla = new System.Windows.Forms.DataGridView();
-            ((System.ComponentModel.ISupportInitialize)(this.Grilla)).BeginInit();
             this.SuspendLayout();
             // 
             // GraficoIngresos
             // 
-            this.GraficoIngresos.Location = new System.Drawing.Point(34, 50);
+            this.GraficoIngresos.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.GraficoIngresos.Location = new System.Drawing.Point(0, 0);
             this.GraficoIngresos.Name = "GraficoIngresos";
-            this.GraficoIngresos.Size = new System.Drawing.Size(395, 239);
+            this.GraficoIngresos.Size = new System.Drawing.Size(1091, 761);
             this.GraficoIngresos.TabIndex = 0;
             this.GraficoIngresos.Text = "pieChart1";
-            // 
-            // Grilla
-            // 
-            this.Grilla.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.Grilla.Location = new System.Drawing.Point(366, 12);
-            this.Grilla.Name = "Grilla";
-            this.Grilla.Size = new System.Drawing.Size(422, 417);
-            this.Grilla.TabIndex = 1;
-            this.Grilla.Visible = false;
             // 
             // Resumen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.Grilla);
+            this.ClientSize = new System.Drawing.Size(1091, 761);
             this.Controls.Add(this.GraficoIngresos);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Resumen";
             this.Text = "Resumen";
             this.Load += new System.EventHandler(this.Resumen_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.Grilla)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -69,6 +58,5 @@ namespace Economica.Pantallas
         #endregion
 
         private LiveCharts.WinForms.PieChart GraficoIngresos;
-        private System.Windows.Forms.DataGridView Grilla;
     }
 }
