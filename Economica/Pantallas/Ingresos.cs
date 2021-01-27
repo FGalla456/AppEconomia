@@ -52,6 +52,7 @@ namespace Economica.Pantallas
             ing.Descripcion1 = txtDescripcion.Text.ToString();
             ing.Monto1 = Int32.Parse(txtMonto.Text.ToString());
             ni.CargarIngreso(ing);
+            Gen.CrearMensajeCargaCorrecta("Gasto");
         }
 
         private void Ingresos_Load(object sender, EventArgs e)
@@ -59,6 +60,15 @@ namespace Economica.Pantallas
             cbCategorias.ValueMember = "idCategoria";
             cbCategorias.DisplayMember = "Nombre";
             cbCategorias.DataSource = nc.getTablaCatFiltrada(1);
+        }
+
+        private void dtpFecha_ValueChanged(object sender, EventArgs e)
+        {
+            if (dtpFecha.Value > DateTime.Now)
+            {
+                dtpFecha.Value = DateTime.Now;
+                Gen.CrearMensajeFechaErronea();
+            }
         }
     }
 }

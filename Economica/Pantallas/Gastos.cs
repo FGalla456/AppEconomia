@@ -51,6 +51,7 @@ namespace Economica
             gas.Descripcion1 = txtDescripcion.Text.ToString();
             gas.Monto1 = Int32.Parse(txtMonto.Text.ToString());
             ng.CargarGasto(gas);
+            Gen.CrearMensajeCargaCorrecta("Gasto");
 
         }
 
@@ -59,6 +60,15 @@ namespace Economica
             cbCategorias.ValueMember = "idCategoria";
             cbCategorias.DisplayMember = "Nombre";
             cbCategorias.DataSource = nc.getTablaCatFiltrada(0);
+        }
+
+        private void dtpFecha_ValueChanged(object sender, EventArgs e)
+        {
+            if (dtpFecha.Value > DateTime.Now)
+            {
+                dtpFecha.Value = DateTime.Now;
+                Gen.CrearMensajeFechaErronea();
+            }
         }
     }
 }

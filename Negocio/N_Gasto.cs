@@ -19,6 +19,11 @@ namespace Negocio
             return dg.getTablaGasto();
         }
 
+        public DataTable getTablaResumen()
+        {
+            return dg.getTablaGastosResumen();
+        }
+
         public void CargarGasto(Gastos gas)
         {
             dg.InsertarGasto(gas);

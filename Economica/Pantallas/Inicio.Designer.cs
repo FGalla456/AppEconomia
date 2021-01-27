@@ -119,12 +119,12 @@
             // 
             // PanelMenu
             // 
-            this.PanelMenu.Controls.Add(this.btnGastos);
-            this.PanelMenu.Controls.Add(this.btnResumen);
             this.PanelMenu.Controls.Add(this.btnPais);
-            this.PanelMenu.Controls.Add(this.btnIngresos);
+            this.PanelMenu.Controls.Add(this.btnResumen);
             this.PanelMenu.Controls.Add(this.btnDolar);
             this.PanelMenu.Controls.Add(this.btnCategoria);
+            this.PanelMenu.Controls.Add(this.btnIngresos);
+            this.PanelMenu.Controls.Add(this.btnGastos);
             resources.ApplyResources(this.PanelMenu, "PanelMenu");
             this.PanelMenu.Name = "PanelMenu";
             // 

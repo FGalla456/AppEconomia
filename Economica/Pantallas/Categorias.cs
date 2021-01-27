@@ -57,7 +57,7 @@ namespace Economica.Pantallas
                 cat.Nombre1 = txtNombre.Text.ToString();
                 cat.Descripcion1 = txtDescripcion.Text.ToString();
                 nc.CargarCategoria(cat);
-                MessageBox.Show("Cargado Correctamente");
+                Gen.CrearMensajeCargaCorrecta("Gasto");
             }
         }
 

@@ -26,5 +26,14 @@ namespace DAO
 
             ds.RealizarConsulta(consulta);
         }
+
+        public DataTable getTablaGastosResumen()
+        {
+            List<Gastos> lista = new List<Gastos>();
+            DataTable tabla = ds.ObtenerTabla("Gastos", "select Categoria.idCategoria as 'Categoria'," +
+                "Categoria.Nombre,Monto from Gasto inner join Categoria on Categoria.idCategoria = Gasto.idCategoria where Gasto.Estado = 1");
+            return tabla;
+        }
+
     }
 }

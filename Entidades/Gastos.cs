@@ -8,6 +8,7 @@ namespace Entidades
 {
     public class Gastos
     {
+        string Fecha;
         private int idCategoria;
         private float Monto;
         private string Descripcion;
@@ -17,5 +18,6 @@ namespace Entidades
         public float Monto1 { get => Monto; set => Monto = value; }
         public string Descripcion1 { get => Descripcion; set => Descripcion = value; }
         public bool Estado1 { get => Estado; set => Estado = value; }
+        public string Fecha1 { get => Fecha; set => Fecha = value; }
     }
 }

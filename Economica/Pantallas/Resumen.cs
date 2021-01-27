@@ -16,6 +16,7 @@ namespace Economica.Pantallas
 {
     public partial class Resumen : Form
     {
+        public SeriesCollection Serie = new SeriesCollection();
         public struct Datos 
         {
             public int idCat;
@@ -26,25 +27,26 @@ namespace Economica.Pantallas
         N_Ingreso ing = new N_Ingreso();
         DataTable dt = new DataTable();
         N_Categoria cat = new N_Categoria();
+        N_Gasto gas = new N_Gasto();
         public Resumen()
         {
             InitializeComponent();
-            SeriesCollection Serie = new SeriesCollection();
-            Serie = LlenarGrafico();
-            GraficoIngresos.Series = Serie;
+           /* SeriesCollection Serie = new SeriesCollection();
+            Serie = LlenarGrafico();*/
+           // GraficoIngresos.Series = Serie;
         }
 
         private void Resumen_Load(object sender, EventArgs e)
         {
         }
 
-        public SeriesCollection LlenarGrafico()
+        public SeriesCollection LlenarGrafico(int Tipo)
         {
             Func<ChartPoint, string> labelPoint = chartPoint =>
             string.Format("{0} ({1:P})", chartPoint.Y, chartPoint.Participation);
             SeriesCollection Serie = new SeriesCollection();
             List<Datos> Dat = new List<Datos>();
-            Dat = LlenarLista();
+            Dat = LlenarLista(Tipo);
             foreach (Datos row in Dat)
             {
                 PieSeries Dato = new PieSeries();
@@ -57,10 +59,10 @@ namespace Economica.Pantallas
             return Serie;
         }
 
-        public List<Datos> LlenarLista()
+        public List<Datos> LlenarLista(int Tipo)
         {
             List<Datos> Dato = new List<Datos>();
-            dt = cat.getTablaCatFiltrada(1);
+            dt = cat.getTablaCatFiltrada(Tipo);
             foreach (DataRow row in dt.Rows)
             {
                 Datos da = new Datos();
@@ -69,7 +71,15 @@ namespace Economica.Pantallas
                 da.Total = 0;
                 Dato.Add(da);
             }
-            dt = ing.getTablaResumen();
+            if (Tipo == 1)
+            {
+                dt = ing.getTablaResumen();
+            }
+            else
+            {
+                dt = gas.getTablaResumen();
+            }
+
             foreach (DataRow row in dt.Rows)
             {
                 for(int i=0; i<=Dato.Count-1; i++) 
@@ -87,5 +97,16 @@ namespace Economica.Pantallas
             return Dato;
         }
 
+        private void rbIngreso_CheckedChanged(object sender, EventArgs e)
+        {
+            Serie = LlenarGrafico(1);
+            GraficoIngresos.Series = Serie;
+        }
+
+        private void rbGasto_CheckedChanged(object sender, EventArgs e)
+        {
+            Serie = LlenarGrafico(0);
+            GraficoIngresos.Series = Serie;
+        }
     }
 }

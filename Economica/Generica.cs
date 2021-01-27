@@ -117,6 +117,8 @@ namespace Generica
 
         #region Mensajes
 
+        #region Errores
+
         public void CrearMensajeVacios(bool Error,string Datos) 
         {
             if (Error == true)
@@ -131,6 +133,21 @@ namespace Generica
                 MessageBox.Show("Los siguientes campos no cumplen los requisitos solicitados: " + Datos);
             }
         }
+
+        public void CrearMensajeFechaErronea()
+        {
+            MessageBox.Show("La Fecha no puede ser posterior a la actual: " + DateTime.Now.ToString());
+        }
+
+        #endregion
+
+        #region Cargas
+        public void CrearMensajeCargaCorrecta(string clase)
+        {
+            MessageBox.Show("La siguiente carga fue realizada correctamente: " + clase);
+        }
+
+        #endregion
 
         #endregion
     }

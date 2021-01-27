@@ -84,6 +84,7 @@ namespace Economica.Pantallas
                 me.Fecha1 = mcNuevo.SelectionStart.Date.ToString("yyyy-MM-dd");
                 me.IdPais = 2;
                 nme.CargarValorMonExt(me);
+                Gen.CrearMensajeCargaCorrecta("Gasto");
                 this.Close();
             }
         }

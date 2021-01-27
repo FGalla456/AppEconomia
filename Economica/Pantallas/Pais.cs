@@ -51,6 +51,7 @@ namespace Economica.Pantallas
                 pais.Nombre_Pais1 = txtNombrePais.Text.ToString();
                 pais.Nombre_Moneda1 = txtNombreMoneda.Text.ToString();
                 np.CargarPais(pais);
+                Gen.CrearMensajeCargaCorrecta("Gasto");
             }
         }
 

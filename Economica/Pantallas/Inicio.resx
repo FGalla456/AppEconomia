@@ -151,7 +151,7 @@
     <value>Top</value>
   </data>
   <data name="btnGastos.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 635</value>
+    <value>0, 0</value>
   </data>
   <data name="btnGastos.Size" type="System.Drawing.Size, System.Drawing">
     <value>293, 126</value>
@@ -172,13 +172,13 @@
     <value>PanelMenu</value>
   </data>
   <data name="&gt;&gt;btnGastos.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>5</value>
   </data>
   <data name="btnIngresos.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Top</value>
   </data>
   <data name="btnIngresos.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 254</value>
+    <value>0, 126</value>
   </data>
   <data name="btnIngresos.Size" type="System.Drawing.Size, System.Drawing">
     <value>293, 127</value>
@@ -199,13 +199,13 @@
     <value>PanelMenu</value>
   </data>
   <data name="&gt;&gt;btnIngresos.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <data name="btnResumen.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Top</value>
   </data>
   <data name="btnResumen.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 508</value>
+    <value>0, 507</value>
   </data>
   <data name="btnResumen.Size" type="System.Drawing.Size, System.Drawing">
     <value>293, 127</value>
@@ -232,7 +232,7 @@
     <value>Top</value>
   </data>
   <data name="btnCategoria.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
+    <value>0, 253</value>
   </data>
   <data name="btnCategoria.Size" type="System.Drawing.Size, System.Drawing">
     <value>293, 127</value>
@@ -253,13 +253,13 @@
     <value>PanelMenu</value>
   </data>
   <data name="&gt;&gt;btnCategoria.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>3</value>
   </data>
   <data name="btnDolar.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Top</value>
   </data>
   <data name="btnDolar.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 127</value>
+    <value>0, 380</value>
   </data>
   <data name="btnDolar.Size" type="System.Drawing.Size, System.Drawing">
     <value>293, 127</value>
@@ -280,13 +280,13 @@
     <value>PanelMenu</value>
   </data>
   <data name="&gt;&gt;btnDolar.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>2</value>
   </data>
   <data name="btnPais.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Top</value>
   </data>
   <data name="btnPais.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 381</value>
+    <value>0, 634</value>
   </data>
   <data name="btnPais.Size" type="System.Drawing.Size, System.Drawing">
     <value>293, 127</value>
@@ -307,7 +307,7 @@
     <value>PanelMenu</value>
   </data>
   <data name="&gt;&gt;btnPais.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>0</value>
   </data>
   <data name="btnMinimizar.Location" type="System.Drawing.Point, System.Drawing">
     <value>1185, 11</value>
