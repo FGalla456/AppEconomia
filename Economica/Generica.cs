@@ -35,7 +35,7 @@ namespace Generica
             }
         }
 
-        public void PermitirDecimales(object sender, KeyPressEventArgs e)
+        public void PermitirDecimales(object sender, KeyPressEventArgs e, string Texto)
         {
             if (Char.IsLetter(e.KeyChar))
             {
@@ -53,14 +53,24 @@ namespace Generica
             {
                 e.Handled = true;
             }
-            else if (e.KeyChar == ',' || e.KeyChar == '.')
-            {
-                e.KeyChar = '.';
-                e.Handled = false;
-            }
             else
             {
                 e.Handled = true;
+            }
+            if (Texto != "")
+            {
+                if (e.KeyChar == '.' || e.KeyChar == ',')
+                {
+                    if (Texto.Contains('.'))
+                    {
+                        e.Handled = true;
+                    }
+                    else
+                    {
+                        e.KeyChar = '.';
+                        e.Handled = false;
+                    }
+                }
             }
         }
 

@@ -57,9 +57,9 @@ namespace Economica.Pantallas
             Gen.NoPermitirEscribir(sender, e);
         }
 
-        public void PermitirDecimales(object sender, KeyPressEventArgs e) 
+        public void PermitirDecimales(object sender, KeyPressEventArgs e, string Texto) 
         {
-            Gen.PermitirDecimales(sender, e);
+            Gen.PermitirDecimales(sender, e, Texto);
         }
 
         #endregion
