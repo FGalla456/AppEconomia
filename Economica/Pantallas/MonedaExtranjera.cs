@@ -140,5 +140,30 @@ namespace Economica.Pantallas
                 mcNuevo.SelectionStart = DateTime.Today;
             }
         }
+
+        private void txtVCO2_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            PermitirDecimales(sender,e,txtVCO2.Text);
+        }
+
+        private void txtVVO2_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            PermitirDecimales(sender, e, txtVVO2.Text);
+        }
+
+        private void txtVCOI2_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            PermitirDecimales(sender, e, txtVCOI2.Text);
+        }
+
+        private void txtVCB2_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            PermitirDecimales(sender, e, txtVCB2.Text);
+        }
+
+        private void txtVVB2_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            PermitirDecimales(sender, e, txtVVB2.Text);
+        }
     }
 }
