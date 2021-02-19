@@ -17,7 +17,7 @@ namespace Economica.Pantallas
     {
         Genericas gen = new Genericas();
         N_Usuario nusu = new N_Usuario();
-        Usuario usu = new Usuario();
+        public Usuario usu = new Usuario();
 
         public Iniciar_Sesion()
         {
@@ -68,5 +68,13 @@ namespace Economica.Pantallas
             return Error;
         }
         #endregion
+
+        private void txtContraseña_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (int)Keys.Enter)
+            {
+                btnAceptar_Click(sender,e);
+            }
+        }
     }
 }

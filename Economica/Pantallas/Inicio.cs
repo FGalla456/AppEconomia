@@ -13,6 +13,8 @@ namespace Economica
 {
     public partial class Inicio : Form
     {
+        Entidades.Usuario usu = new Entidades.Usuario();
+
         public Inicio()
         {
             InitializeComponent();
@@ -20,8 +22,27 @@ namespace Economica
 
         private void Inicio_Load(object sender, EventArgs e)
         {
+            lblVersion.Text = "0.9.1";
             Iniciar_Sesion In = new Iniciar_Sesion();
             In.ShowDialog();
+            usu = In.usu;
+            if(usu.Correo1 == null) 
+            {
+                this.Close();
+            }
+            else 
+            {
+                lblNombre.Text = "Hola " + usu.Nombre1 + " " + usu.Apellido1;
+                if (usu.Administrador1 == true) 
+                {
+                    btnPais.Visible = true;
+                }
+                else 
+                {
+                    btnPais.Visible = false;
+                }
+            }
+
         }
 
         private void AbrirHijo<Forms>() where Forms : Form, new()

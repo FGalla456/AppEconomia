@@ -37,6 +37,8 @@
             this.btnDolar = new System.Windows.Forms.Button();
             this.btnPais = new System.Windows.Forms.Button();
             this.PanelSuperior = new System.Windows.Forms.Panel();
+            this.lblVersion = new System.Windows.Forms.Label();
+            this.lblNombre = new System.Windows.Forms.Label();
             this.btnMinimizar = new System.Windows.Forms.Button();
             this.btnConfiguracion = new System.Windows.Forms.Button();
             this.PanelMenu = new System.Windows.Forms.Panel();
@@ -56,52 +58,71 @@
             // btnGastos
             // 
             resources.ApplyResources(this.btnGastos, "btnGastos");
+            this.btnGastos.BackColor = System.Drawing.Color.SpringGreen;
             this.btnGastos.Name = "btnGastos";
-            this.btnGastos.UseVisualStyleBackColor = true;
+            this.btnGastos.UseVisualStyleBackColor = false;
             this.btnGastos.Click += new System.EventHandler(this.btnGastos_Click);
             // 
             // btnIngresos
             // 
             resources.ApplyResources(this.btnIngresos, "btnIngresos");
+            this.btnIngresos.BackColor = System.Drawing.Color.SpringGreen;
             this.btnIngresos.Name = "btnIngresos";
-            this.btnIngresos.UseVisualStyleBackColor = true;
+            this.btnIngresos.UseVisualStyleBackColor = false;
             this.btnIngresos.Click += new System.EventHandler(this.btnIngresos_Click);
             // 
             // btnResumen
             // 
             resources.ApplyResources(this.btnResumen, "btnResumen");
+            this.btnResumen.BackColor = System.Drawing.Color.SpringGreen;
             this.btnResumen.Name = "btnResumen";
-            this.btnResumen.UseVisualStyleBackColor = true;
+            this.btnResumen.UseVisualStyleBackColor = false;
             this.btnResumen.Click += new System.EventHandler(this.btnResumen_Click);
             // 
             // btnCategoria
             // 
             resources.ApplyResources(this.btnCategoria, "btnCategoria");
+            this.btnCategoria.BackColor = System.Drawing.Color.SpringGreen;
             this.btnCategoria.Name = "btnCategoria";
-            this.btnCategoria.UseVisualStyleBackColor = true;
+            this.btnCategoria.UseVisualStyleBackColor = false;
             this.btnCategoria.Click += new System.EventHandler(this.btnCategoria_Click);
             // 
             // btnDolar
             // 
             resources.ApplyResources(this.btnDolar, "btnDolar");
+            this.btnDolar.BackColor = System.Drawing.Color.SpringGreen;
             this.btnDolar.Name = "btnDolar";
-            this.btnDolar.UseVisualStyleBackColor = true;
+            this.btnDolar.UseVisualStyleBackColor = false;
             this.btnDolar.Click += new System.EventHandler(this.btnDolar_Click);
             // 
             // btnPais
             // 
             resources.ApplyResources(this.btnPais, "btnPais");
+            this.btnPais.BackColor = System.Drawing.Color.SpringGreen;
             this.btnPais.Name = "btnPais";
-            this.btnPais.UseVisualStyleBackColor = true;
+            this.btnPais.UseVisualStyleBackColor = false;
             this.btnPais.Click += new System.EventHandler(this.btnPais_Click);
             // 
             // PanelSuperior
             // 
+            this.PanelSuperior.BackColor = System.Drawing.Color.Turquoise;
+            this.PanelSuperior.Controls.Add(this.lblVersion);
+            this.PanelSuperior.Controls.Add(this.lblNombre);
             this.PanelSuperior.Controls.Add(btnCerrar);
             this.PanelSuperior.Controls.Add(this.btnMinimizar);
             this.PanelSuperior.Controls.Add(this.btnConfiguracion);
             resources.ApplyResources(this.PanelSuperior, "PanelSuperior");
             this.PanelSuperior.Name = "PanelSuperior";
+            // 
+            // lblVersion
+            // 
+            resources.ApplyResources(this.lblVersion, "lblVersion");
+            this.lblVersion.Name = "lblVersion";
+            // 
+            // lblNombre
+            // 
+            resources.ApplyResources(this.lblNombre, "lblNombre");
+            this.lblNombre.Name = "lblNombre";
             // 
             // btnMinimizar
             // 
@@ -119,6 +140,7 @@
             // 
             // PanelMenu
             // 
+            this.PanelMenu.BackColor = System.Drawing.Color.Turquoise;
             this.PanelMenu.Controls.Add(this.btnPais);
             this.PanelMenu.Controls.Add(this.btnResumen);
             this.PanelMenu.Controls.Add(this.btnDolar);
@@ -130,6 +152,7 @@
             // 
             // PanelContenedor
             // 
+            this.PanelContenedor.BackColor = System.Drawing.Color.Turquoise;
             resources.ApplyResources(this.PanelContenedor, "PanelContenedor");
             this.PanelContenedor.Name = "PanelContenedor";
             // 
@@ -144,6 +167,7 @@
             this.Name = "Inicio";
             this.Load += new System.EventHandler(this.Inicio_Load);
             this.PanelSuperior.ResumeLayout(false);
+            this.PanelSuperior.PerformLayout();
             this.PanelMenu.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -162,6 +186,8 @@
         private System.Windows.Forms.Panel PanelContenedor;
         private System.Windows.Forms.Button btnMinimizar;
         private System.Windows.Forms.Button btnConfiguracion;
+        private System.Windows.Forms.Label lblNombre;
+        private System.Windows.Forms.Label lblVersion;
     }
 }
 
