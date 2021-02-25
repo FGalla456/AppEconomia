@@ -21,8 +21,8 @@ namespace DAO
 
         public void InsertarGasto(Gastos gas)
         {
-            string consulta = "insert into Gasto(idCategoria,Monto,Descripcion,Estado) " +
-                              "values (" + gas.IdCategoria+ "," + gas.Monto1+ ",'" + gas.Descripcion1 + "',1)";
+            string consulta = "insert into Gasto(idCategoria,Fecha,Monto,Descripcion,Estado) " +
+                              "values (" + gas.IdCategoria + ",'" + gas.Fecha1 + "'," + gas.Monto1 + ",'" + gas.Descripcion1 + "',1)";
 
             ds.RealizarConsulta(consulta);
         }

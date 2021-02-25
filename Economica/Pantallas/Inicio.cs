@@ -22,6 +22,7 @@ namespace Economica
 
         private void Inicio_Load(object sender, EventArgs e)
         {
+            this.Invalidate();
             lblVersion.Text = "0.9.1";
             Iniciar_Sesion In = new Iniciar_Sesion();
             In.ShowDialog();
@@ -128,10 +129,15 @@ namespace Economica
 
         private void btnConfiguracion_Click(object sender, EventArgs e)
         {
-            Configuracion Con = new Configuracion();
-            Con.Show();
+            AbrirHijo<Configuracion>();
         }
 
         #endregion
+
+        private void PanelSuperior_Paint(object sender, PaintEventArgs e)
+        {
+            Pen p = new Pen(Color.Blue);
+            e.Graphics.DrawRectangle(p, PanelSuperior.Left - 1, PanelSuperior.Top - 1, PanelSuperior.Width + 1, PanelSuperior.Height + 1);
+        }
     }
 }

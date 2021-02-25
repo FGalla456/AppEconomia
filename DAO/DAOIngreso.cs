@@ -21,8 +21,8 @@ namespace DAO
 
         public void InsertarIngreso(Ingresos ing)
         {
-            string consulta = "insert into Ingreso(idCategoria,Monto,Descripcion,Estado) " +
-                               "values (" + ing.IdCategoria + "," + ing.Monto1 + ",'" + ing.Descripcion1 + "',1)";
+            string consulta = "insert into Ingreso(idCategoria,Fecha,Monto,Descripcion,Estado) " +
+                               "values (" + ing.IdCategoria + ",'" + ing.Fecha1 + "'," + ing.Monto1 + ",'" + ing.Descripcion1 + "',1)";
 
             ds.RealizarConsulta(consulta);
         }

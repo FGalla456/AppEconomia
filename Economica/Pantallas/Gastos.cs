@@ -47,6 +47,7 @@ namespace Economica
 
         private void btnAceptar_Click(object sender, EventArgs e)
         {
+            gas.Fecha1 = dtpFecha.Value.ToString("yyyy-MM-dd");
             gas.IdCategoria = Int32.Parse(cbCategorias.SelectedValue.ToString());
             gas.Descripcion1 = txtDescripcion.Text.ToString();
             gas.Monto1 = Int32.Parse(txtMonto.Text.ToString());

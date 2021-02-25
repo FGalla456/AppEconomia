@@ -31,8 +31,9 @@ namespace Economica.Pantallas
         {
             this.GraficoIngresos = new LiveCharts.WinForms.PieChart();
             this.gbTabla = new System.Windows.Forms.GroupBox();
-            this.rbIngreso = new System.Windows.Forms.RadioButton();
             this.rbGasto = new System.Windows.Forms.RadioButton();
+            this.rbIngreso = new System.Windows.Forms.RadioButton();
+            this.cartesianChart1 = new LiveCharts.WinForms.CartesianChart();
             this.gbTabla.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -54,18 +55,6 @@ namespace Economica.Pantallas
             this.gbTabla.TabIndex = 1;
             this.gbTabla.TabStop = false;
             // 
-            // rbIngreso
-            // 
-            this.rbIngreso.AutoSize = true;
-            this.rbIngreso.Location = new System.Drawing.Point(17, 28);
-            this.rbIngreso.Name = "rbIngreso";
-            this.rbIngreso.Size = new System.Drawing.Size(60, 17);
-            this.rbIngreso.TabIndex = 0;
-            this.rbIngreso.TabStop = true;
-            this.rbIngreso.Text = "Ingreso";
-            this.rbIngreso.UseVisualStyleBackColor = true;
-            this.rbIngreso.CheckedChanged += new System.EventHandler(this.rbIngreso_CheckedChanged);
-            // 
             // rbGasto
             // 
             this.rbGasto.AutoSize = true;
@@ -78,11 +67,33 @@ namespace Economica.Pantallas
             this.rbGasto.UseVisualStyleBackColor = true;
             this.rbGasto.CheckedChanged += new System.EventHandler(this.rbGasto_CheckedChanged);
             // 
+            // rbIngreso
+            // 
+            this.rbIngreso.AutoSize = true;
+            this.rbIngreso.Location = new System.Drawing.Point(17, 28);
+            this.rbIngreso.Name = "rbIngreso";
+            this.rbIngreso.Size = new System.Drawing.Size(60, 17);
+            this.rbIngreso.TabIndex = 0;
+            this.rbIngreso.TabStop = true;
+            this.rbIngreso.Text = "Ingreso";
+            this.rbIngreso.UseVisualStyleBackColor = true;
+            this.rbIngreso.CheckedChanged += new System.EventHandler(this.rbIngreso_CheckedChanged);
+            // 
+            // cartesianChart1
+            // 
+            this.cartesianChart1.Location = new System.Drawing.Point(12, 94);
+            this.cartesianChart1.Name = "cartesianChart1";
+            this.cartesianChart1.Size = new System.Drawing.Size(200, 100);
+            this.cartesianChart1.TabIndex = 2;
+            this.cartesianChart1.Text = "cartesianChart1";
+            this.cartesianChart1.Visible = false;
+            // 
             // Resumen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1091, 761);
+            this.Controls.Add(this.cartesianChart1);
             this.Controls.Add(this.gbTabla);
             this.Controls.Add(this.GraficoIngresos);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -101,5 +112,6 @@ namespace Economica.Pantallas
         private System.Windows.Forms.GroupBox gbTabla;
         private System.Windows.Forms.RadioButton rbGasto;
         private System.Windows.Forms.RadioButton rbIngreso;
+        private LiveCharts.WinForms.CartesianChart cartesianChart1;
     }
 }

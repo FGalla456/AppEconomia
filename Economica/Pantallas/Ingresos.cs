@@ -48,6 +48,7 @@ namespace Economica.Pantallas
 
         private void btnAceptar_Click(object sender, EventArgs e)
         {
+            ing.Fecha1 = dtpFecha.Value.ToString("yyyy-MM-dd");
             ing.IdCategoria = Int32.Parse(cbCategorias.SelectedValue.ToString());
             ing.Descripcion1 = txtDescripcion.Text.ToString();
             ing.Monto1 = Int32.Parse(txtMonto.Text.ToString());
